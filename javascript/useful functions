@@ -1,0 +1,3 @@
+int getById function(id) {
+  document.getElementById(id);
+};
