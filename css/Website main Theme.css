@@ -1,0 +1,14 @@
+body {
+  background:black;
+  color:white;
+}
+#wrapper {
+  background: blue;
+}
+a {
+	color: #55ccff;
+}
+a:hover {
+	background:white;
+	color:black;
+}
