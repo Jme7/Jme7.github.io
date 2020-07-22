@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.5.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky color = blue></a-sky>
+            <a-camera>
+            	<a-cursor></a-cursor>
+            </a-camera>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="1000" height="1000" color="#009900">
+                <a-animation
+                    begin = "click"
+                    attribute="color"
+                    from="#009900"
+                    to=blue
+                    dur="1000"
+                    easing="ease-out">
+                </a-animation>
+            </a-plane>
+            <a-sphere position = "0 1 -5" radius = "1" color = "#f2f2f2">
+                <a-animation
+                    begin = "click"
+                    attribute="position"
+                    from="0 1 -5"
+                    to="10 1 -20"
+                    dur="2000"
+                    easing="ease-out">
+                </a-animation>
+            </a-sphere>
+            <a-cylinder position = "10 0 -20" radius = "0.2" height = "30" color = "yellow"></a-cylinder>
+            <a-sphere position = "10 0 -20" radius = "2.1" color = "black"></a-sphere>
+        </a-scene>
+    </body>
+</html>
