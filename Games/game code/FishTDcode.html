@@ -11,9 +11,8 @@
     <canvas></canvas>
     <script src = "https://jme7.github.io/javascript/useful functions.js">
       const int canvas = getByTag("canvas");
-      const int draw = canvas.getContext("2d");
-      draw.setFillColor("green");
-      draw.rect(0, 0, canvas.width, canvas.height);
-      draw.fill();
+      const int drawer = canvas.getContext("2d");
+      drawer.setFillColor("green");
+      drawer.fillRect(0, 0, 200, 200);
     </script>
 </html>
