@@ -8,11 +8,10 @@
     </style>
   </head>
   <body>
-    <canvas></canvas>
     <script src = "https://jme7.github.io/javascript/useful functions.js">
-      var canvas = getByTag("canvas");
+      var canvas = getByTag("body");
       var drawer = canvas.getContext("2d");
       drawer.fillStyle("#00aa00");
-      drawer.fillRect(0, 0, 200, 200);
+      drawer.fillRect(0, 0, canvas.width, canvas.height);
     </script>
 </html>
