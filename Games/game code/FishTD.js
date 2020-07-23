@@ -1,4 +1,0 @@
-<!DOCTYPE
-<script>
-  
-</script>
