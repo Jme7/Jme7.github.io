@@ -1,12 +1,12 @@
-int getById function(id) {
+int getById = function(id) {
   return document.getElementById(id);
 };
-int getByClass function(class) {
+int getByClass = function(class) {
   return document.getElementByClass(class);
 };
-int getByTag function(tag) {
+int getByTag = function(tag) {
   return document.getElementByTagName(tag);
 };
-int valueOf function(selector) {
+int valueOf = function(selector) {
   return selector.value
 };
