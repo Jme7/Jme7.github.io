@@ -18,10 +18,19 @@
 	<body>
 		<h1>Playing FishTD</h1>
 		<canvas id = "Game"></canvas>
-	<script src = "https://jme7.github.io/javascript/useful functions.js">
-      		var canvas = document.getElementById("Game");
-      		var drawer = canvas.getContext("2d");
-      		drawer.fillStyle = "#00aa00";
-      		drawer.fillRect(0, 0, 200, 200);
-    	</script>
+		<script src = "https://jme7.github.io/javascript/useful functions.js">
+      			// var canvas = document.getElementById("Game");
+      			// var drawer = canvas.getContext("2d");
+      			// drawer.fillStyle = "#00aa00";
+      			// drawer.fillRect(0, 0, 200, 200);
+			function draw() {
+ 				var drawing = document.getElementById("Game");
+ 				var con = drawing.getContext("2d");
+ 						con.fillStyle = "red";
+ 				con.strokeStyle = "green";
+			 	con.lineWidth = "5";
+		 		con.fillRect(10, 10, 180, 80);
+			 	con.strokeRect(10, 100, 180, 80);
+ 			} // end draw
+    		</script>
 </html>
