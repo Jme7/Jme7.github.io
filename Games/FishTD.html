@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset = "utf-8">
-    <title>Playing FishTD</title>
-    <link rel="stylesheet" type="text/css" href="https://jme7.github.io/css/Website%20main%20theme.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://Jme7.github.io/apple-touch-icon.png">
+	<head>
+		<meta charset = "utf-8">
+		<title>Playing FishTD</title>
+		<link rel="stylesheet" type="text/css" href="https://jme7.github.io/css/Website%20main%20theme.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://Jme7.github.io/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="https://Jme7.github.io/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="192x192" href="https://Jme7.github.io/android-chrome-192x192.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="https://Jme7.github.io/favicon-16x16.png">
@@ -14,8 +14,14 @@
 		<meta name="msapplication-TileColor" content="#ff0000">
 		<meta name="msapplication-TileImage" content="https://Jme7.github.io/mstile-144x144.png">
 		<meta name="theme-color" content="#3b3b3b">
-  </head>
-  <body>
-    <h1>Playing FishTD</h1>
-    <iframe allow = "fullscreen" src = "https://jme7.github.io/Games/game code/FishTDcode.html" width = "400" height = "300"></iframe>
+	</head>
+	<body>
+		<h1>Playing FishTD</h1>
+		<canvas id = "Game"></canvas>
+	<script src = "https://jme7.github.io/javascript/useful functions.js">
+      		var canvas = document.getElementById("Game");
+      		var drawer = canvas.getContext("2d");
+      		drawer.fillStyle = "#00aa00";
+      		drawer.fillRect(0, 0, 200, 200);
+    	</script>
 </html>
