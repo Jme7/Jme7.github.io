@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body {
+		font-family: "Courier"
+	}	
+</style>
+<meta charset="utf-8">
+<title>eat eat eat</title>
+</head>
+<pre></pre>
+<h1><pre>Welcome to eating simulator!</pre></h1>
+<pre style="cursor:pointer">
+<span onClick="openTab('Kitchen', this, 'white')">
+_________
+|  THE  |
+|       | 
+|KITCHEN|</span>
+_________<span id="defaultOpen" onClick="openTab('Store', this, 'white')">
+|  THE  |
+|       |
+| STORE |</span>
+_________<span onClick="openTab('Library', this, 'white')">
+|  THE  |
+|       |
+|LIBRARY|</span>
+</pre>
+<div id="status-tracker">
+<pre>Calories:<span class="calories">0</span></pre>
+<pre>Money: <span class="money">0</span></pre>
+</div>
+<div id="Kitchen" class="tabcontent">
+  <h1>The kitchen</h1>
+  <pre>You do not have the permission to make food. let's try to convince the chef!</pre>
+	<pre>       .--,--.
+       `.  ,.'
+        |___|
+        :o o:   O   
+       _`~^~'_  |    
+     /'   ^   `\=)
+   .'  _______ '~|
+   `( =|     |= /'
+       |     |
+       |_____|  
+~~~~~~~ ===== ~~~~~~~~</pre>
+<pre>"Meh, i don't really think you can cook. you can help me by finding 2 ingredients, dorito and cheese! That should cure your boredom. wait, why did you come here?"
+<pre class="chefresponce1"></pre>
+<pre id="chefresponce2"></pre>
+<button onClick="chefbutton()">Let's go!</button></pre>
+<pre id="yay"></pre>
+</div>
+<div id="vault" class="tabcontent">
+  <pre>
+          _________________________________________________________
+       ||-------------------------------------------------------||
+       ||.--.    .-._                        .----.             ||
+       |||==|____| |H|___            .---.___|""""|_____.--.___ ||
+       |||  |====| | |xxx|_          |+++|=-=|_  _|-=+=-|==|---|||
+       |||==|    | | |   | \         |   |   |_\/_|Black|  | ^ |||
+       |||  |    | | |   |\ \   .--. |   |=-=|_/\_|-=+=-|  | ^ |||
+       |||  |    | | |   |_\ \_( oo )|   |   |    |Magus|  | ^ |||
+       |||==|====| |H|xxx|  \ \ |''| |+++|=-=|""""|-=+=-|==|---|||
+       ||`--^----'-^-^---'   `-' ""  '---^---^----^-----^--^---^||
+       ||-------------------------------------------------------||
+       ||-------------------------------------------------------||
+       ||               ___                   .-.__<span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true;">.-----.</span> .---.||
+       ||              |===| .---.   __   .---| |XX<span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true;">| (*) |</span>_|^^^|||
+       ||         ,  /(|   |_|III|__|''|__|:x:|=|  <span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true;">|     |</span>=| Q |||
+       ||      _a'{ / (|===|+|   |++|  |==|   | |  <span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true;">| DOR |</span> | R |||
+       ||      '/\\/ _(|===|-|   |  |''|  |:x:|=|  <span style="cursor: pointer" onClick="alert('you just obtained a dorito!'); dorito = true;">| ITO |</span> | Y |||
+       ||_____  -\{___(|   |-|   |  |  |  |   | |  |     | | Z |||
+       ||       _(____)|===|+|[I]|DK|''|==|:x:|=|XX| (*) |=|^^^|||
+       ||              `---^-^---^--^--'--^---^-^--^-----^-^---^||
+       ||-------------------------------------------------------||
+       ||_______________________________________________________||
+  
+  </pre>
+</div>
+<div id="pizzainformation" class="tabcontent">
+ <pre>
+ <h1>Pizza</h1>
+                                    ._
+                                   ,(  `-.
+                                 ,': `.   `.
+                               ,` *   `-.   \
+                             ,'  ` :+  = `.  `.
+                           ,~  (o):  .,   `.  `.
+                         ,'  ; :   ,(__) x;`.  ;
+                       ,'  :'  itz  ;  ; ; _,-'
+                     .'O ; = _' C ; ;'_,_ ;
+                   ,;  _;   ` : ;'_,-'   i'
+                 ,` `;(_)  0 ; ','       :
+               .';6     ; ' ,-'~
+             ,' Q  ,  ;',-.'
+           ,( :` ; _,-'~  ;
+         ,~.`c _','
+       .';^_,-' ~
+     ,'_;-''
+    ,,~
+    i'
+    :
+	pizzas are known how it's cheesy, and delicious taste and look. but expert cknologists say that pizza are more important then that. 
+	no  cknologists know how they are more important in other ways, but legend says that there is a ancient scroll that is hidden in the 
+	unknown regions of the cknaria dessert that may contain the answer. you need a world map to get there.<button onClick="openTab('Store', this, 'white')">back to the store</button>
+ 
+ </pre>
+</div>
+<div id="Library" class="tabcontent">
+	
+	<pre>
+	
+	   <br>
+<span id="librarianhello">"Hello, i'm the librarian. how can i help you?"</span>
+	 ______________________________________________________
+    |____________________________________________________|    |
+    | __     __   ____   ___ ||  ____    ____     _  __  |    |
+    ||  |__ |--|_| || |_|   |||_|**|*|__|+|+||___| ||  | |    |
+    ||==|^^||--| |=||=| |=*=||| |~~|~|  |=|=|| | |~||==| |    |
+    ||  |##||  | | || | |JRO|||-|  | |==|+|+||-|-|~||__| |    |
+    ||__|__||__|_|_||_|_|___|||_|__|_|__|_|_||_|_|_||__|_|    |
+    ||_______________________||__________________________|    |
+    | _____________________  ||      __   __  _  __    _ |    |
+    ||=|=|=|=|=|=|=|=|=|=|=| __..\/ |  |_|  ||#||==|  / /|    |
+    || | | | | | | | | | | |/\ \  \\|++|=|  || ||==| / / |    |
+    ||_|_|_|_|_|_|_|_|_|_|_/_/\_.___\__|_|__||_||__|/_/__|    |
+    |____________________ /\~()/()~//\ __________________|    |
+    | __   __    _  _     \_  (_ .  _/ _    ___     _____|    |
+    ||~~|_|..|__| || |_ _   \ //\\ /  |=|__|~|~|___| | | |    |
+    ||--|+|^^|==|1||2| | |__/\ __ /\__| |==|x|x|+|+|=|=|=|    |
+    ||__|_|__|__|_||_|_| /  \ \  / /  \_|__|_|_|_|_|_|_|_|    |
+    |_________________ _/    \/\/\/    \_ _______________|    |
+    | _____   _   __  |/      \../      \|  __   __   ___|    |
+    ||_____|_| |_|##|_||   |   \/ __|   ||_|==|_|++|_|-|||    |
+    ||______||=|#|--| |\   \   o    /   /| |  |~|  | | |||    |
+    ||______||_|_|__|_|_\   \  o   /   /_|_|__|_|__|_|_|||    |
+    |_________ __________\___\____/___/___________ ______|    |
+    |__    _  /    ________     ______           /| _ _ _|    |
+    |\ \  |=|/   //    /| //   /  /  / |        / ||%|%|%|    |
+    | \/\ |*/  .//____//.//   /__/__/ (_)      /  ||=|=|=|    |
+  __|  \/\|/   /(____|/ //                    /  /||~|~|~|____|
+    |___\_/   /________//   ________         /  / ||_|_|_|<span style="cursor: pointer" onClick="librarypathway()"><--</span> |
+    |___ /   (|________/   |\_______\       /  /| |______|____|
+        /                  \|________)     /  / | |
+
+	<button onClick="document.getElementById('librarianhello').innerHTML = 'I dont know! My best bet is the chef. he has a LOT of stuff that he doesnt know what it is. he will ALWAYS ask you to find him cheese and dorito, no matter what. try doing that! maybe he might give it to you.'">Where do i get an world map?</button><button onClick="document.getElementById('librarianhello').innerHTML = 'A pizza, known to be 5 dollars, has a strange effect on you. you can do magic!! Well, at least the legend says that.'">What does an pizza do?</button>
+	</pre>
+</div>
+	
+<div id="Libraryvault" class="tabcontent">
+	<h1>the vault</h1>
+<pre>                     <span class="soldier">"What are you doing here, in the vault?"</span>
+    |\                |\                |\                |\
+    || .---.          || .---.          || .---.          || .---.
+    ||/_____\         ||/_____\         ||/_____\         ||/_____\
+    ||( '.' )         ||( '.' )         ||( '.' )         ||( '.' )
+    || \_-_/_         || \_-_/_         || \_-_/_         || \_-_/_
+    :-"`'V'//-.       :-"`'V'//-.       :-"`'V'//-.       :-"`'V'//-.
+   / ,   |// , `\    / ,   |// , `\    / ,   |// , `\    / ,   |// , `\
+  / /|Ll //Ll|| |   / /|Ll //Ll|| |   / /|Ll //Ll|| |   / /|Ll //Ll|| |
+ /_/||__//   || |  /_/||__//   || |  /_/||__//   || |  /_/||__//   || |
+ \ \/---|[]==|| |  \ \/---|[]==|| |  \ \/---|[]==|| |  \ \/---|[]==|| |
+  \/\__/ |   \| |   \/\__/ |   \| |   \/\__/ |   \| |   \/\__/ |   \| |
+  /\|_   | Ll_\ |   /|/_   | Ll_\ |   /|/_   | Ll_\ |   /|/_   | Ll_\ |
+  `--|`^"""^`||_|   `--|`^"""^`||_|   `--|`^"""^`||_|   `--|`^"""^`||_|
+     |   |   ||/       |   |   ||/       |   |   ||/       |   |   ||/
+     |   |   |         |   |   |         |   |   |         |   |   |
+     |   |   |         |   |   |         |   |   |         |   |   |
+     |   |   |         |   |   |         |   |   |         |   |   |
+     L___l___J         L___l___J         L___l___J         L___l___J
+      |_ | _|           |_ | _|           |_ | _|           |_ | _|
+     (___|___)         (___|___)         (___|___)         (___|___)
+      ^^^ ^^^           ^^^ ^^^           ^^^ ^^^           ^^^ ^^^
+                            
+							<button class="soldieranswer" onClick="changeSoldier()">The librarian let me come here.</button>
+
+</pre>	
+	
+</div>
+<div id="Store" class="tabcontent">
+<pre><h1>The store</h1></pre>
+<p>You can buy food! it lowers your money and make you calories go higher.</p>
+<pre>
+// ""--.._
+||  (_)  _ "-._
+||    _ (_)    '-.
+||   (_)   __..-'
+ \\__..--""
+ calories: 300
+ money: 5.00$
+ learn more information about this item in the <button onClick="openTab('pizzainformation', this, 'white')">library</button>
+</pre>
+<button class="pizzabutton" onClick="eat('pizza')">click to eat pizza</button>
+	
+<pre>
+   ,-.
+ _(*_*)_
+(_  o  _)
+  / o \
+ (_/ \_)
+ money: 5.00$
+ calories: 290
+</pre>
+<button class="pizzabutton" onClick="eat('gingerbread')">Click to eat a gingerbread man</button>
+	
+<pre>
+   _________
+  | _______ |
+ / \         \
+/___\_________\
+|   | \       |
+|   |  \      |
+|   |   \     |
+|   | M  \    |
+|   |     \   |
+|   |\  I  \  |
+|   | \     \ |
+|   |  \  L  \|
+|   |   \     |
+|   |    \  K |
+|   |     \   |
+|   |ckn   \  |
+|___|_______\_|
+cost: 3.00$
+calories: 122 (i didn't choose the calories.)
+</pre>
+<button class="milkbutton" onclick="eat('milk')">Click to drink milk</button>
+	
+<pre>
+                          (             ) 
+                  )      (*)           (*)      ( 
+         *       (*)      |             |      (*) 
+                  |      |~|           |~|      |          * 
+                 |~|     | |           | |     |~| 
+                 | |     | |           | |     | | 
+                ,| |a@@@@| |@@@@@@@@@@@| |@@@@a| |. 
+           .,a@@@| |@@@@@| |@@@@@@@@@@@| |@@@@@| |@@@@a,. 
+         ,a@@@@@@| |@@@@@@@@@@@@.@@@@@@@@@@@@@@| |@@@@@@@a, 
+        a@@@@@@@@@@@@@@@@@@@@@' . `@@@@@@@@@@@@@@@@@@@@@@@@a 
+        ;`@@@@@@@@@@@@@@@@@@'   .   `@@@@@@@@@@@@@@@@@@@@@'; 
+        ;@@@`@@@@@@@@@@@@@'     .     `@@@@@@@@@@@@@@@@'@@@; 
+        ;@@@;,.aaaaaaaaaa       .       aaaaa,,aaaaaaa,;@@@; 
+        ;;@;;;;@@@@@@@@;@      @.@<span style="cursor:pointer" onClick="foundcheese(); var cheese = true;">cheese</span>;@@@;;;@@@@@@;;;;@@; 
+        ;;;;;;;@@@@;@@;;@    @@ . @@    ;;@;;;;@@;@@@;;;;;;; 
+        ;;;;;;;;@@;;;;;;;  @@   .   @@  ;;;;;;;;;;;@@;;;;@;; 
+        ;;;;;;;;;;;;;;;;;@@     .     @@;;;;;;;;;;;;;;;;@@a; 
+    ,%%%;;;;;;;;@;;;;;;;;       .       ;;;;;;;;;;;;;;;;@@;;%%%, 
+ .%%%%%%;;;;;;;a@;;;;;;;;     ,%%%,     ;;;;;;;;;;;;;;;;;;;;%%%%%%, 
+.%%%%%%%;;;;;;;@@;;;;;;;;   ,%%%%%%%,   ;;;;;;;;;;;;;;;;;;;;%%%%%%%, 
+%%%%%%%%`;;;;;;;;;;;;;;;;  %%%%%%%%%%%  ;;;;;;;;;;;;;;;;;;;'%%%%%%%% 
+%%%%%%%%%%%%`;;;;;;;;;;;;,%%%%%%%%%%%%%,;;;;;;;;;;;;;;;'%%%%%%%%%%%% 
+`%%%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%%%%%%' 
+  `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%' 
+      `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%' 
+             """"""""""""""`,,,,,,,,,'""""""""""""""""" 
+                            `%%%%%%%' 
+                             `%%%%%' 
+                               %%% 
+                              %%%%% 
+                           .,%%%%%%%,. 
+                      ,%%%%%%%%%%%%%%%%%%%, cost: 200 dollars (very sweet)
+          ---------------------------------------------
+</pre>
+<button class="cake" onClick="eat('chocolatecake')" disabled>Click to eat a entire birthday cake (chocolate)</button>	
+	
+
+</div>
+<body>
+<pre>ASCII arts provided by <a href="https://ascii.co.uk/">ascii.co.uk</a></pre>
+<script>
+function openTab(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+<script>
+var money = 0;
+var calories = 0;
+var cheese = false;
+var dorito = false;
+var buttontime = -1;
+var worldmap = false;
+var soldierbuttonpressed = -1;
+function classchange(classname, changeto){
+	document.querySelector("." + classname).innerHTML = changeto;
+}
+function idchange(idname, changetoid){
+	document.getElementById(idname).innerHTML = changetoid;
+}
+function eat(item) {
+	if (item === "pizza") {
+		calories += 300
+		money -= 5 
+		alert("Oh dear. you lost 5 dollars and gained 300 callories!")
+	}
+	if (item === "gingerbread") {
+		calories += 290
+		money -= 5 
+		alert("Oh dear. you lost 5 dollars! That cookie looks nice though. probably shouldn't eat it.")
+	}
+	if (item === "milk") {
+		calories += 122
+		money -= 3 
+		alert("You drunk some milk!")
+	}
+}
+function chefbutton() {
+	document.getElementById("yay").innerHTML = "Thanks! the cheese is probably in the store. i dont know about the dorito...";
+}
+setInterval(function() {
+	money = money + 1;
+	document.querySelector(".money").innerHTML = money;
+	document.querySelector(".calories").innerHTML = calories;
+	if (money  >= 5) {
+		document.querySelector(".pizzabutton").disabled = false;
+	} else {
+		document.querySelector(".pizzabutton").disabled = true;
+	}
+	if (money  >= 3) {
+		document.querySelector(".milkbutton").disabled = false;
+	} else {
+		document.querySelector(".milkbutton").disabled = true;
+	}
+	if (dorito == true && cheese == true) {
+		document.querySelector('.chefresponce1').innerHTML = ' '
+		document.getElementById("chefresponce2").innerHTML = " "
+		document.getElementById("yay").innerHTML = "Thank you for helping me! as a reward, here is a world map. you'll probably use it more then i do."
+		worldmap = true;
+	}
+}, 1000)
+
+function foundmushroom() {
+	document.querySelector('.chefresponce1').innerHTML = 'Ah! you found my mushroom! very much thanks.'
+	mushroom = true
+}
+
+function foundcheese() {
+	document.getElementById("chefresponce2").innerHTML = "Ah! you found my cheese! very much thanks."
+	cheese = true;
+}
+
+function librarypathway() {
+	buttontime++;
+	if (buttontime == 0){
+			document.getElementById("librarianhello").innerHTML = "Oh! please don't go there. all our important ancient writings are in there. please don't even dare to go in there. if you do, you will- oops. i said too much."
+	}
+	if (buttontime == 1){
+			document.getElementById("librarianhello").innerHTML = "What did i just say? you can't go in there!"
+	}
+	if (buttontime == 2){
+			document.getElementById("librarianhello").innerHTML = "That is the library's top priority! Pleaassseeee do not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not not go in there!"
+	}
+	if (buttontime == 3){
+			document.getElementById("librarianhello").innerHTML = "Hello?! i just said the word 'not' like, a hundred times and you still want to go!?!?!?"
+	}
+	if (buttontime == 4){
+			document.getElementById("librarianhello").innerHTML = "Fine. just go. *groan*"
+	}
+	if (buttontime >= 5){
+			openTab('Libraryvault', this, 'white')
+	}
+}
+
+function changeSoldier() {
+	soldierbuttonpressed++;
+	if (soldierbuttonpressed == 0) {
+		document.querySelector(".soldier").innerHTML = "oH! We'll let you in then."
+		document.querySelector(".soldieranswer").innerHTML = "Thanks!"
+	}
+	if (soldierbuttonpressed == 1) {
+		openTab('vault', this, 'white')
+	}
+}
+
+<script>
+
+</html>
