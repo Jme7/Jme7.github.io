@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Suggest an 💡idea💡 for this project
 title: Feature wanted
 labels: enhancement
 assignees: 'Jme7'
