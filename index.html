@@ -40,41 +40,39 @@
 		<marquee class="time"></marquee>
 		<script>
 			setInterval(function() {
-	var e = new Date();
-var d = e.getDate();
-var m = e.getMonth();
-var th = "st ";
-if ((d % 10) == 1) {th = "st ";}
-if ((d % 10) == 2) {th = "nd ";}
-if ((d % 10) == 3) {th = "rd ";}
-if (e < 20) {th = "th "}
-if (e == 1) {th = "st "}
-// since it's programming janurary = 0, feburary = 1, and so on so it's not a mistake
-if (m == 0) {var month = "janurary"}
-if (m == 1) {var month = "February"}
-if (m == 2) {var month = "March"}
-if (m == 3) {var month = "April"}
-if (m == 4) {var month = "May"}
-if (m == 5) {var month = "June"}
-if (m == 6) {var month = "July"}
-if (m == 7) {var month = "August"}
-if (m == 8) {var month = "September"}
-if (m == 9) {var month = "October"}
-if (m == 10) {var month = "November"}
-if (m == 11) {var month = "Christmas month"}
-var s = e.getSeconds();
-var hours = e.getHours();
-var n = e.getMinutes();
-var mi = e.getMilliseconds();
-if (hours >= 12) {
-	var hours = hours -= 12
-}
-var fullnum = "Jme7 -- the time is " + hours + ":" + n + ":" + s + " of the " + d + th + "of " + month + "!";
-document.querySelector(".time").innerHTML = fullnum;
-
-
-}, 1)
-
+				var e = new Date();
+				var d = e.getDate();
+				var m = e.getMonth();
+				var th = "";
+				if ((d % 10) == 1) {th = "st ";}
+				if ((d % 10) == 2) {th = "nd ";}
+				if ((d % 10) == 3) {th = "rd ";}
+				if (e < 20) {th = "th "}
+				if (e == 1) {th = "st "}
+				// since it's programming janurary = 0, feburary = 1, and so on so it's not a mistake
+				if (m == 0) {var month = "Janurary"}
+				if (m == 1) {var month = "February"}
+				if (m == 2) {var month = "March"}
+				if (m == 3) {var month = "April"}
+				if (m == 4) {var month = "May"}
+				if (m == 5) {var month = "June"}
+				if (m == 6) {var month = "July"}
+				if (m == 7) {var month = "August"}
+				if (m == 8) {var month = "September"}
+				if (m == 9) {var month = "October"}
+				if (m == 10) {var month = "November"}
+				if (m == 11) {var month = "December"}
+				var s = e.getSeconds();
+				var hours = e.getHours();
+				var militaryhours = e.getHours();
+				var n = e.getMinutes();
+				var mi = e.getMilliseconds();
+				if (hours >= 12) {
+					var hours = hours -= 12
+				}
+				var fullnum = "It is " + hours + ":" + n + ":" + s + mi + " or " + militaryhours + ":" + n + ":" + s + ":" + mi +" military time. It is also the " + d + th + "of " + month + ".";
+				document.querySelector(".time").innerHTML = fullnum;
+			}, 1)
 		</script>
 	</body>
 </html>
