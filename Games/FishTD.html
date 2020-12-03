@@ -19,13 +19,12 @@
 		<canvas id = "Game"></canvas>
 		<script src = "https://jme7.github.io/javascript/html_getby_and_valueof_functions.js"></script>
 		<script>
-			var MaxSize = Math.min(window.InnerWidth, window.innerHeight);
       			var canvas = document.getElementById("Game");
-			canvas.width = MaxSize;
-			canvas.height = MaxSize;
+			canvas.width = 1000;
+			canvas.height = 1000;
       			var drawer = canvas.getContext("2d");
       			drawer.fillStyle = "#00aa00";
-      			drawer.fillRect(0, 0, MaxSize, MazSize);
+      			drawer.fillRect(0, 0, 1000, 1000);
 			
     		</script>
 	</body>
